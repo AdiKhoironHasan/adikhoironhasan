@@ -1,16 +1,31 @@
-### Hi there 👋
+```go
+package main
 
-<!--
-**AdiKhoironHasan/adikhoironhasan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+import "fmt"
 
-Here are some ideas to get you started:
+type Profile struct {
+	Name         string
+	Email        string
+	Role         string
+	Hobbies      []string
+	Databases    []string
+	Technologies []string
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+func (p *Profile) sayHi() {
+	fmt.Println("Thank you for stopping by, Hope you found something interesting and useful. :)")
+}
+
+func main() {
+	me := &Profile{
+		Name:         "Adi Khoiron Hasan",
+		Email:        "adikhoironhasan@gmail.com",
+		Role:         "Backend Engineer",
+		Hobbies:      []string{"Coding", "Music", "Game"},
+		Databases:    []string{"MySQL", "PostgreSQL", "Redis"},
+		Technologies: []string{"Golang", "Laravel", "Docker", "gRPC", "Kafka"},
+	}
+
+	me.sayHi()
+}
+```
