@@ -22,8 +22,8 @@ func main() {
 		Email:        "adikhoironhasan@gmail.com",
 		Role:         "Backend Engineer",
 		Hobbies:      []string{"Coding", "Music", "Game"},
-		Databases:    []string{"MySQL", "PostgreSQL", "Redis"},
-		Technologies: []string{"Golang", "Laravel", "Docker", "gRPC", "Kafka"},
+		Databases:    []string{"MySQL", "PostgreSQL", "Redis", "MongoDB"},
+		Technologies: []string{"Golang", "Laravel", "Docker", "gRPC", "RabbitMq"},
 	}
 
 	me.sayHi()
